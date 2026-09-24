@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Alerta Sonoro Acessível</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <header>
+            <h1>👂 Alerta Sonoro Acessível</h1>
+            <p>
+                Transformando sons do ambiente em alertas visuais
+                para auxiliar pessoas com deficiência auditiva.
+            </p>
+        </header>
+
+        <section id="painel" class="painel silencioso">
+
+            <div id="emoji" class="emoji">😊</div>
+
+            <h2 id="situacao">Ambiente tranquilo</h2>
+
+            <p id="mensagem">
+                Pouco ruído detectado
+            </p>
+
+            <div class="medidor">
+                <div id="barra" class="barra"></div>
+            </div>
+
+            <div class="nivel">
+                Intensidade do som:
+                <strong id="valorSom">0</strong>
+            </div>
+
+            <div class="status">
+                <span id="indicador" class="indicador"></span>
+                <span id="textoStatus">Aguardando microfone</span>
+            </div>
+
+        </section>
+
+        <button id="botaoIniciar">
+            🎤 Ativar microfone
+        </button>
+
+        <button id="botaoParar" disabled>
+            ⏹ Parar
+        </button>
+
+        <section class="explicacao">
+
+            <h2>Como funciona?</h2>
+
+            <div class="legenda">
+
+                <div>
+                    <span class="bolinha verde"></span>
+                    😊 Baixo ruído
+                </div>
+
+                <div>
+                    <span class="bolinha amarelo"></span>
+                    😟 Ruído moderado
+                </div>
+
+                <div>
+                    <span class="bolinha vermelho"></span>
+                    😠 Muito barulho
+                </div>
+
+            </div>
+
+            <p class="automatico">
+                ⚙️ Sensibilidade automática ao ambiente
+            </p>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
